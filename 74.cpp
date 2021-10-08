@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//Đếm số chữ số 1 trong 1 số *n
 int countDigits1(int n) {
 	int count = 0;
 	while (n > 0) {
@@ -12,6 +13,7 @@ int countDigits1(int n) {
 	return count;
 }
 
+//Tính tổng các chữ số 1 trong hàng từ 1 -> n
 int sum(int n) {
 	int s = 0;
 	for (int i = 1; i <= n; i++) {
@@ -20,12 +22,14 @@ int sum(int n) {
 	return s;
 }
 
+//Xuất ra các số từ 1 đến n
 void xuatDay(int n) {
 	for (int i = 1; i <= n; i++) {
 		printf("\t%d", i);
 	}
 }
 
+//Nhập số n
 void nhapN(int &n) {
 	do {
 		printf("\nNhap so n: ");
